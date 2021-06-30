@@ -2,9 +2,11 @@ import styled from 'styled-components'
 import Link from "next/link"
 import Image from 'next/image'
 
-const Nav = styled.nav`
+const Nav = styled.nav.attrs(props => ({
+    className: "bg-grey"
+}))`
     height: 80px;
-    background: #eee;
+    /* background: #eee; */
     color: #000;
     display:flex;
     justify-content: space-between;
@@ -42,9 +44,6 @@ const StyledLink = styled.a`
 const Navbar = () => {
     return ( 
         <Nav>
-            {/* <div>
-                <StyledImage src="/simp.png"></StyledImage>
-            </div> */}
             <div>
                 <Image src="/simp.png" width={128} height={77}></Image>
             </div>
@@ -52,14 +51,8 @@ const Navbar = () => {
                 <Link href="/">
                     <StyledLink>Home</StyledLink>
                 </Link>
-                <Link href="/about">
-                    <StyledLink>About</StyledLink>
-                </Link>
                 <Link href="/projects">
                     <StyledLink>Projects</StyledLink>
-                </Link>
-                <Link href="/contact">
-                    <StyledLink>Contact</StyledLink>
                 </Link>
             </div>
         </Nav>
