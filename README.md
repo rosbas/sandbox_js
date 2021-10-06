@@ -5,4 +5,4 @@ Web: https://sandbox-kappa.vercel.app/
 
 Dont forget to update on vercel la, idiot.
 
-HactoberFest Update 1
+HactoberFest Update 2
